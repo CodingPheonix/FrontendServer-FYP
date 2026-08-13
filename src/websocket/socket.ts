@@ -1,3 +1,3 @@
-export const createSocket = (url: string): WebSocket => {
-  return new WebSocket(url);
-};
+import { io } from "socket.io-client";
+
+export const socket = io(import.meta.env.VITE_BACKEND_URL as string);
