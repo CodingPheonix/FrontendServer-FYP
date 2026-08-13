@@ -3,7 +3,8 @@ import {
     setupGeminiListeners,
     removeGeminiListeners,
     emitStartLiveSession,
-    emitAudioInput
+    emitAudioInput,
+    connectGeminiSocket
 } from "../websocket/geminiSocket";
 
 export class GeminiLiveClient {
@@ -40,6 +41,7 @@ export class GeminiLiveClient {
     }
 
     async startSession() {
+        connectGeminiSocket();
         emitStartLiveSession();
         await this.startMicrophone();
     }
@@ -59,9 +61,7 @@ export class GeminiLiveClient {
         });
 
         this.audioContext = new window.AudioContext({ sampleRate: 16000 });
-        
-        // Note: You may need to serve AudioProcessor.js from your 'public' folder
-        // or configure your bundler to import it as a worklet. 
+
         await this.audioContext.audioWorklet.addModule('/AudioProcessor.js');
 
         const source = this.audioContext.createMediaStreamSource(this.mediaStream);
@@ -90,10 +90,10 @@ export class GeminiLiveClient {
     // Handles playing 24kHz 16-bit PCM received from the backend
     private async handleAudioOutput(pcmData: ArrayBuffer) {
         if (!this.audioContext) return;
-        
+
         const int16Array = new Int16Array(pcmData);
         const float32Array = new Float32Array(int16Array.length);
-        
+
         for (let i = 0; i < int16Array.length; i++) {
             float32Array[i] = int16Array[i] / 32768.0;
         }
@@ -101,7 +101,7 @@ export class GeminiLiveClient {
         // Gemini returns 24kHz audio
         const audioBuffer = this.audioContext.createBuffer(1, float32Array.length, 24000);
         audioBuffer.getChannelData(0).set(float32Array);
-        
+
         this.audioQueue.push(audioBuffer);
         this.playNextAudio();
     }
@@ -110,19 +110,19 @@ export class GeminiLiveClient {
         if (this.isPlaying || this.audioQueue.length === 0 || !this.audioContext) {
             return;
         }
-        
+
         this.isPlaying = true;
         const buffer = this.audioQueue.shift()!;
-        
+
         const source = this.audioContext.createBufferSource();
         source.buffer = buffer;
         source.connect(this.audioContext.destination);
-        
+
         source.onended = () => {
             this.isPlaying = false;
             this.playNextAudio();
         };
-        
+
         source.start();
     }
 }

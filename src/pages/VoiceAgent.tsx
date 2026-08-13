@@ -41,6 +41,7 @@ export default function VoiceAgent() {
       setMessages((prev) => [...prev, '[Session Ended]']);
     } else {
       try {
+        console.log('enter');
         setWarning('');
         await clientRef.current.startSession();
         setIsRecording(true);
@@ -51,6 +52,8 @@ export default function VoiceAgent() {
       }
     }
   };
+
+  console.log(isRecording)
 
   return (
     <div style={{ padding: '2rem', maxWidth: '600px', margin: '0 auto', fontFamily: 'sans-serif', textAlign: 'left' }}>

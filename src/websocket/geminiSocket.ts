@@ -4,6 +4,12 @@ export const disconnectGeminiSocket = () => {
   socket.disconnect();
 };
 
+export const connectGeminiSocket = () => {
+  if (!socket.connected) {
+    socket.connect();
+  }
+};
+
 export const setupGeminiListeners = (
   onAudioOutput: (data: ArrayBuffer) => void,
   onTextOutput: (text: string) => void,
