@@ -7,6 +7,37 @@ export default function VoiceAgent() {
   const [warning, setWarning] = useState<string>('');
   const clientRef = useRef<GeminiLiveClient | null>(null);
 
+  // Hardcoded for now, but will eventually come from URL parameters
+  const userId = "default-user";
+  const sessionId = "default-session";
+
+  useEffect(() => {
+    const initSession = async () => {
+      try {
+        const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
+        const response = await fetch(`${backendUrl}/api/sessions/init`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ userId, sessionId }),
+        });
+
+        if (!response.ok) {
+          console.error('Failed to initialize session');
+          setWarning('Failed to initialize backend session');
+        } else {
+          console.log('Session initialized successfully');
+        }
+      } catch (error) {
+        console.error('Error initializing session:', error);
+        setWarning('Error connecting to backend');
+      }
+    };
+
+    initSession();
+  }, [userId, sessionId]);
+
   useEffect(() => {
     // Initialize the Gemini Live Client
     clientRef.current = new GeminiLiveClient();
