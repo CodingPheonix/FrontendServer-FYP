@@ -3,41 +3,182 @@ import ProductCard from "../components/ProductCard";
 import Navbar from "../components/Navbar";
 
 const products = [
+
     {
         id: 1,
         image: "/images/fertilizer1.png",
         brandName: "Plant Power",
         manufacturer: "GreenGrow Industries",
         price: 399,
+        category: "Organic Fertilizers",
         description:
-            "A balanced fertilizer designed for healthy roots, greener leaves, and stronger plant growth.",
+            "A balanced fertilizer designed for healthy roots, greener leaves, and stronger plant growth. It provides essential nutrients to support overall plant health and improve everyday garden performance.",
     },
+
     {
         id: 2,
         image: "/images/fertilizer2.png",
         brandName: "GrowMax",
         manufacturer: "NatureCare Pvt. Ltd.",
         price: 499,
+        category: "Liquid Fertilizers",
         description:
-            "A plant nutrition formula that helps improve growth and supports healthy foliage.",
+            "A plant nutrition formula that helps improve growth and supports healthy foliage. Its balanced nutrients help plants develop stronger roots, maintain vibrant leaves, and grow consistently.",
     },
+
     {
         id: 3,
         image: "/images/fertilizer6.png",
         brandName: "Organic Bloom",
         manufacturer: "Green Earth Organics",
         price: 349,
+        category: "Organic Fertilizers",
         description:
-            "An organic fertilizer formulated to support flowering plants and healthier blooms.",
+            "An organic fertilizer formulated to support flowering plants and healthier blooms. It helps provide essential nutrients for steady growth, stronger plants, and vibrant-looking flowers.",
     },
+
     {
         id: 4,
         image: "/images/fertilizer4.png",
         brandName: "PlantCare Plus",
         manufacturer: "NatureGrow Labs",
         price: 449,
+        category: "Granular Fertilizers",
         description:
-            "A complete plant-care fertilizer suitable for everyday garden nutrition.",
+            "A complete plant-care fertilizer suitable for everyday garden nutrition. It supports healthy roots, greener foliage, and balanced plant development for a wide variety of garden plants.",
+    },
+
+
+    {
+        id: 5,
+        image: "/images/fertilizer9.png",
+        brandName: "Nature Rich",
+        manufacturer: "Organic Earth",
+        price: 429,
+        category: "Organic Fertilizers",
+        description:
+            "A natural plant fertilizer enriched with organic nutrients to support healthy roots and steady growth. It helps improve soil quality while providing gentle and balanced nutrition for plants.",
+    },
+
+    {
+        id: 6,
+        image: "/images/fertilizer10.png",
+        brandName: "Pure Grow",
+        manufacturer: "Green Valley Organics",
+        price: 379,
+        category: "Organic Fertilizers",
+        description:
+            "An organic plant nutrition formula designed to improve soil health and encourage stronger plant development. It provides natural nutrients that support greener foliage and healthier growth.",
+    },
+
+    {
+        id: 7,
+        image: "/images/fertilizer11.png",
+        brandName: "Aqua Feed",
+        manufacturer: "NatureCare Pvt. Ltd.",
+        price: 459,
+        category: "Liquid Fertilizers",
+        description:
+            "A fast-acting liquid fertilizer designed for easy application and quick nutrient absorption. It supports healthy foliage, stronger roots, and consistent plant growth throughout the growing season.",
+    },
+
+    {
+        id: 8,
+        image: "/images/fertilizer12.png",
+        brandName: "Liquid Green",
+        manufacturer: "GreenGrow Industries",
+        price: 529,
+        category: "Liquid Fertilizers",
+        description:
+            "A concentrated liquid plant food formulated to provide balanced nutrition for everyday plant care. It helps maintain vibrant leaves, healthy roots, and strong overall plant development.",
+    },
+
+    {
+        id: 9,
+        image: "/images/fertilizer13.png",
+        brandName: "Green Drops",
+        manufacturer: "PlantLife Organics",
+        price: 399,
+        category: "Liquid Fertilizers",
+        description:
+            "A nutrient-rich liquid fertilizer that helps plants receive essential nutrients efficiently. It is suitable for regular plant care and supports healthy foliage, root development, and steady growth.",
+    },
+
+    {
+        id: 10,
+        image: "/images/fertilizer14.png",
+        brandName: "Granule Grow",
+        manufacturer: "NatureGrow Labs",
+        price: 479,
+        category: "Granular Fertilizers",
+        description:
+            "A slow-release granular fertilizer designed to provide plants with steady nutrition over time. It supports stronger roots, greener leaves, and balanced growth with easy soil application.",
+    },
+
+    {
+        id: 11,
+        image: "/images/fertilizer15.png",
+        brandName: "Soil Boost",
+        manufacturer: "Green Earth Organics",
+        price: 549,
+        category: "Granular Fertilizers",
+        description:
+            "A high-quality granular fertilizer formulated to improve plant nutrition and support healthy soil. Its balanced nutrients help encourage strong roots and consistent growth across the garden.",
+    },
+
+    {
+        id: 12,
+        image: "/images/fertilizer16.png",
+        brandName: "Garden Granules",
+        manufacturer: "GreenGrow Industries",
+        price: 499,
+        category: "Granular Fertilizers",
+        description:
+            "A versatile granular fertilizer suitable for a variety of garden plants. It delivers essential nutrients gradually to support healthy roots, vibrant foliage, and stronger plant development.",
+    },
+
+    {
+        id: 13,
+        image: "/images/fertilizer17.png",
+        brandName: "Plant Boost",
+        manufacturer: "NatureCare Pvt. Ltd.",
+        price: 449,
+        category: "Plant Boosters",
+        description:
+            "A specialized plant booster designed to support vigorous growth and overall plant strength. It provides additional nutrition to help plants develop healthier roots and greener foliage.",
+    },
+
+    {
+        id: 14,
+        image: "/images/fertilizer18.png",
+        brandName: "Growth Plus",
+        manufacturer: "Organic Earth",
+        price: 579,
+        category: "Plant Boosters",
+        description:
+            "A powerful plant booster formulated to support stronger and more active plant growth. It helps improve overall plant vitality and provides additional nutrients during important growth stages.",
+    },
+
+    {
+        id: 15,
+        image: "/images/fertilizer19.png",
+        brandName: "Green Vital",
+        manufacturer: "Green Valley Organics",
+        price: 519,
+        category: "Plant Boosters",
+        description:
+            "A complete plant booster that supports healthy foliage, stronger roots, and balanced development. It is ideal for giving plants an additional nutritional boost when they need extra support.",
+    },
+
+    {
+        id: 16,
+        image: "/images/fertilizer20.png",
+        brandName: "Bloom Boost",
+        manufacturer: "PlantLife Organics",
+        price: 629,
+        category: "Plant Boosters",
+        description:
+            "A specialized booster designed to support flowering and overall plant vitality. It provides additional nutrients to encourage healthy development and help plants produce vibrant, healthy blooms.",
     },
 ];
 
@@ -49,7 +190,7 @@ const bestSellers = [
         manufacturer: "GreenGrow Industries",
         price: 599,
         description:
-            "A powerful plant fertilizer that provides essential nutrients for stronger roots, greener leaves, and healthy overall growth.",
+            "A powerful plant fertilizer that provides essential nutrients for stronger roots, greener leaves, and healthy overall growth. It is designed to support vigorous plant development and improve everyday plant nutrition.",
     },
 
     {
@@ -59,7 +200,7 @@ const bestSellers = [
         manufacturer: "Organic Earth",
         price: 449,
         description:
-            "A root-focused fertilizer designed to encourage stronger root development and improve nutrient absorption.",
+            "A root-focused fertilizer designed to encourage stronger root development and improve nutrient absorption. It helps plants establish a healthy foundation while supporting steady and balanced growth.",
     },
 
     {
@@ -69,7 +210,7 @@ const bestSellers = [
         manufacturer: "NatureCare Pvt. Ltd.",
         price: 529,
         description:
-            "A complete plant nutrition formula that supports healthy foliage, balanced growth, and stronger plants.",
+            "A complete plant nutrition formula that supports healthy foliage, balanced growth, and stronger plants. It provides essential nutrients to help maintain vibrant leaves and overall plant vitality.",
     },
 
     {
@@ -79,7 +220,7 @@ const bestSellers = [
         manufacturer: "Green Earth Organics",
         price: 699,
         description:
-            "A specialized fertilizer formulated to support flowering plants and promote healthy, vibrant blooms.",
+            "A specialized fertilizer formulated to support flowering plants and promote healthy, vibrant blooms. It provides balanced nutrition to encourage strong plant development and beautiful flowering.",
     },
 ];
 
@@ -116,6 +257,8 @@ const Store = () => {
     const [isSliding, setIsSliding] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState<any>(null);
     const [quantity, setQuantity] = useState(1);
+    const [selectedCategory, setSelectedCategory] = useState("All");
+    const [showAllProducts, setShowAllProducts] = useState(false);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -130,6 +273,18 @@ const Store = () => {
         return () => clearInterval(interval);
     }, []);
 
+
+    const filteredProducts =
+        selectedCategory === "All"
+            ? products
+            : products.filter(
+                (product) => product.category === selectedCategory
+            );
+
+    const displayedProducts =
+        selectedCategory === "All" && !showAllProducts
+            ? filteredProducts.slice(0, 8)
+            : filteredProducts;
 
     return (
         <div className="min-h-screen bg-[#0b2419] text-[#f4f1e8]">
@@ -285,9 +440,7 @@ const Store = () => {
             >
 
 
-                {/* =================================================
-                    CATEGORIES SECTION
-                ================================================== */}
+                {/* =============CATEGORIES SECTION================================================== */}
 
                 <section className="pt-20">
 
@@ -333,129 +486,61 @@ const Store = () => {
                         </div>
 
 
-                        <button
-                            className="
-                                self-start
-                                md:self-auto
-                                flex
-                                items-center
-                                gap-3
-                                rounded-lg
-                                border
-                                border-[#516b5c]
-                                bg-[#173628]
-                                px-6
-                                py-3
-                                font-semibold
-                                transition
-                                duration-300
-                                hover:bg-[#224b37]
-                            "
-                        >
-                            Shop All
-                            <span className="text-xl">›</span>
-                        </button>
 
                     </div>
 
 
                     {/* Category tabs */}
 
-                    <div
-                        className="
-                            flex
-                            flex-wrap
-                            gap-3
-                            mt-7
-                        "
-                    >
+                    <div className="flex flex-wrap gap-3 mt-7">
 
-                        <button
-                            className="
-                                rounded-md
-                                border
-                                border-[#718674]
-                                bg-[#345542]
-                                px-5
-                                py-2.5
-                                text-sm
-                                font-medium
-                            "
-                        >
-                            Organic Fertilizers
-                        </button>
+                        {[
+                            "Organic Fertilizers",
+                            "Liquid Fertilizers",
+                            "Granular Fertilizers",
+                            "Plant Boosters",
+                            "All",
+                        ].map((category) => (
+                            <button
+                                key={category}
+                                onClick={() => {
+                                    setSelectedCategory(category);
 
-                        <button
-                            className="
-                                rounded-md
-                                border
-                                border-[#465e50]
-                                bg-[#193628]
-                                px-5
-                                py-2.5
-                                text-sm
-                                font-medium
-                                text-[#d2dbd3]
-                                transition
-                                hover:bg-[#294a38]
-                            "
-                        >
-                            Liquid Fertilizers
-                        </button>
+                                    // If user selects All, show all 16
+                                    if (category === "All") {
+                                        setShowAllProducts(true);
+                                    }
+                                }}
+                                className={`
+                rounded-3xl
+                border
+                
+                px-5
+                py-2.5
+                text-sm
+                font-medium
+                transition
+                duration-300
+                
 
-                        <button
-                            className="
-                                rounded-md
-                                border
-                                border-[#465e50]
-                                bg-[#193628]
-                                px-5
-                                py-2.5
-                                text-sm
-                                font-medium
-                                text-[#d2dbd3]
-                                transition
-                                hover:bg-[#294a38]
-                            "
-                        >
-                            Granular Fertilizers
-                        </button>
-
-                        <button
-                            className="
-                                rounded-md
-                                border
-                                border-[#465e50]
-                                bg-[#193628]
-                                px-5
-                                py-2.5
-                                text-sm
-                                font-medium
-                                text-[#d2dbd3]
-                                transition
-                                hover:bg-[#294a38]
-                            "
-                        >
-                            Plant Boosters
-                        </button>
-
-                        <button
-                            className="
-                                rounded-md
-                                border
-                                border-[#465e50]
-                                bg-[#193628]
-                                px-5
-                                py-2.5
-                                text-sm
-                                font-medium
-                                text-[#d2dbd3]
-                                transition
-                                hover:bg-[#294a38]
-                            "
-                        >
-                            All
-                        </button>
+                ${selectedCategory === category
+                                        ? `
+                            border-[#55d979]
+                            bg-[#345542]
+                            text-[#55d979]
+                          `
+                                        : `
+                            border-[#465e50]
+                            bg-[#193628]
+                            text-[#d2dbd3]
+                            hover:bg-[#294a38]
+                          `
+                                    }
+            `}
+                            >
+                                {category}
+                            </button>
+                        ))}
 
                     </div>
 
@@ -472,20 +557,49 @@ const Store = () => {
                             mt-8
                         "
                     >
-
-                        {products.map((product) => (
+                        {displayedProducts.map((product) => (
                             <ProductCard
                                 key={product.id}
                                 product={product}
-                                onClick={(product) => {
-                                    setSelectedProduct(product);
-                                }}
+                                onClick={() => setSelectedProduct(product)}
                             />
                         ))}
-
                     </div>
 
+                    <button
+                        onClick={() => {
+                            setSelectedCategory("All");
+                            setShowAllProducts((prev) => !prev);
+                        }}
+                        className="
+                                mx-auto
+                                mt-8
+                                flex
+                                items-center
+                                gap-3
+                                rounded-3xl
+                                border
+                                border-[#55d979]
+                                bg-[#173628]
+                                text-[#55d979]
+                                px-6
+                                py-3
+                                font-semibold
+                                transition
+                                duration-300
+                                hover:bg-[#224b37]
+                            "
+                    >
+                        {showAllProducts ? "See Less" : "See More"}
+
+                        <span className="text-xl">
+                            {showAllProducts ? "↑" : "↓"}
+                        </span>
+                    </button>
+
                 </section>
+
+
 
 
                 {/* =================================================
@@ -548,6 +662,9 @@ const Store = () => {
 
                     </div>
 
+
+
+
                 </section>
 
 
@@ -560,17 +677,18 @@ const Store = () => {
                     <div
                         className="
                             relative
-                            min-h-[300px]
+                            min-h-[350px]
                             rounded-2xl
                             overflow-hidden
                             border
                             border-[#4b6555]
-                            bg-cover
+                           bg-[length:100%_115%]
                             bg-center
+                            bg-no-repeat
                         "
                         style={{
                             backgroundImage:
-                                "url('/images/fertilizer-banner.jpg')",
+                                "url('/images/fertilizer-banner.png')",
                         }}
                     >
 
@@ -582,7 +700,7 @@ const Store = () => {
                                 inset-0
                                 bg-gradient-to-r
                                 from-[#071c14]/95
-                                via-[#102c20]/75
+                                via-[#102c20]/5
                                 to-transparent
                             "
                         />
@@ -628,6 +746,7 @@ const Store = () => {
                                 </p>
 
                                 <button
+                                    onClick={() => setSelectedProduct(bestSellers[1])}
                                     className="
                                         mt-6
                                         inline-flex
@@ -708,72 +827,119 @@ const Store = () => {
                         <div
                             className="
                                 group
+                                relative
+                                w-full
+                                h-64
+                                sm:h-72
+                                md:h-80
+                                lg:h-84
+
                                 cursor-pointer
-                                rounded-2xl
                                 overflow-hidden
+                                rounded-2xl
                                 border
                                 border-[#405849]
                                 bg-[#173628]
-                                transition
+
+                                transition-all
                                 duration-300
                                 hover:-translate-y-1
                                 hover:border-[#68806f]
                             "
                         >
+                            {/* Background Image */}
+                            <img
+                                src="/images/guide1.png"
+                                alt="Choosing fertilizer"
+                                className="
+            absolute
+            inset-0
+            h-full
+            w-full
+            object-cover
+            transition-all
+            duration-500
+            group-hover:scale-105
+            group-hover:blur-sm
+        "
+                            />
 
-                            <div className="h-48 overflow-hidden">
+                            {/* Dark overlay */}
+                            <div
+                                className="
+            absolute
+            inset-0
+            bg-black/10
+            transition-all
+            duration-500
+            group-hover:bg-black/30
+        "
+                            />
 
-                                <img
-                                    src="/images/guide1.jpg"
-                                    alt="Choosing fertilizer"
-                                    className="
-                                        w-full
-                                        h-full
-                                        object-cover
-                                        transition-transform
-                                        duration-500
-                                        group-hover:scale-105
-                                    "
-                                />
+                            {/* Glass Text Panel */}
+                            <div
+                                className="
+            absolute
+            inset-x-0
+            bottom-0
+            z-10
+            h-full
+            p-5
 
-                            </div>
+            bg-[#173628]/70
+            backdrop-blur-xl
 
-                            <div className="p-5">
+            border-t
+            border-white/10
 
+            transition-transform
+            duration-500
+            ease-in-out
+
+            translate-y-[calc(100%-85px)]
+            group-hover:translate-y-0
+        "
+                            >
+                                {/* Category */}
                                 <p
                                     className="
-                                        text-xs
-                                        uppercase
-                                        tracking-wider
-                                        text-[#91aa98]
-                                    "
+                text-xs
+                uppercase
+                tracking-wider
+                text-[#91aa98]
+            "
                                 >
                                     Fertilizer Guide
                                 </p>
 
+                                {/* Heading */}
                                 <h3
                                     className="
-                                        mt-2
-                                        text-xl
-                                        font-semibold
-                                    "
+                mt-2
+                text-xl
+                font-semibold
+                text-white
+            "
                                 >
-                                    How to Choose the Right Fertilizer
+                                    How to Choose Right Fertilizer
                                 </h3>
 
-                                <p
+                                {/* Description */}
+                                <div
                                     className="
-                                        mt-2
+                                        mt-3
+                                        space-y-2
                                         text-sm
+                                        leading-relaxed
                                         text-[#aebdb2]
                                     "
                                 >
-                                    Understand NPK and choose the
-                                    right nutrition for your plants.
-                                </p>
-
+                                    <p>1. Check the NPK ratio on the fertilizer label.</p>
+                                    <p>2. Choose the NPK ratio based on your plant's needs.</p>
+                                    <p>3. Use the recommended amount—avoid over-fertilizing.</p>
+                                    <p>4. Apply the fertilizer evenly around the plant.</p>
+                                </div>
                             </div>
-
                         </div>
 
 
@@ -781,73 +947,120 @@ const Store = () => {
 
                         <div
                             className="
-                                group
-                                cursor-pointer
-                                rounded-2xl
-                                overflow-hidden
-                                border
-                                border-[#405849]
-                                bg-[#173628]
-                                transition
-                                duration-300
-                                hover:-translate-y-1
-                                hover:border-[#68806f]
-                            "
+        group
+        relative
+        w-full
+        h-64
+        sm:h-72
+        md:h-80
+        lg:h-84
+
+        cursor-pointer
+        overflow-hidden
+        rounded-2xl
+        border
+        border-[#405849]
+        bg-[#173628]
+
+        transition-all
+        duration-300
+        hover:-translate-y-1
+        hover:border-[#68806f]
+    "
                         >
+                            {/* Background Image */}
+                            <img
+                                src="/images/guide2.png"
+                                alt="Plant growth"
+                                className="
+            absolute
+            inset-0
+            h-full
+            w-full
+            object-cover
+            transition-all
+            duration-500
+            group-hover:scale-105
+            group-hover:blur-sm
+        "
+                            />
 
-                            <div className="h-48 overflow-hidden">
+                            {/* Dark overlay */}
+                            <div
+                                className="
+            absolute
+            inset-0
+            bg-black/10
+            transition-all
+            duration-500
+            group-hover:bg-black/30
+        "
+                            />
 
-                                <img
-                                    src="/images/guide2.jpg"
-                                    alt="Plant growth"
-                                    className="
-                                        w-full
-                                        h-full
-                                        object-cover
-                                        transition-transform
-                                        duration-500
-                                        group-hover:scale-105
-                                    "
-                                />
+                            {/* Glass Text Panel */}
+                            <div
+                                className="
+            absolute
+            inset-x-0
+            bottom-0
+            z-10
+            h-full
+            p-5
 
-                            </div>
+            bg-[#173628]/70
+            backdrop-blur-xl
 
-                            <div className="p-5">
+            border-t
+            border-white/10
 
+            transition-transform
+            duration-500
+            ease-in-out
+
+            translate-y-[calc(100%-85px)]
+            group-hover:translate-y-0
+        "
+                            >
+                                {/* Category */}
                                 <p
                                     className="
-                                        text-xs
-                                        uppercase
-                                        tracking-wider
-                                        text-[#91aa98]
-                                    "
+                text-xs
+                uppercase
+                tracking-wider
+                text-[#91aa98]
+            "
                                 >
                                     Plant Care
                                 </p>
 
+                                {/* Heading */}
                                 <h3
                                     className="
-                                        mt-2
-                                        text-xl
-                                        font-semibold
-                                    "
+                mt-2
+                text-xl
+                font-semibold
+                text-white
+            "
                                 >
                                     How Often Should You Fertilize?
                                 </h3>
 
-                                <p
+                                {/* Guide Points */}
+                                <div
                                     className="
-                                        mt-2
-                                        text-sm
-                                        text-[#aebdb2]
-                                    "
+                mt-3
+                space-y-2
+                text-sm
+                leading-relaxed
+                text-[#aebdb2]
+            "
                                 >
-                                    Learn when and how often your
-                                    plants need additional nutrients.
-                                </p>
-
+                                    <p>1. Check your plant's growth stage and condition.</p>
+                                    <p>2. Follow the recommended fertilizing schedule.</p>
+                                    <p>3. Reduce feeding during slow or dormant growth.</p>
+                                    <p>4. Avoid over-fertilizing, as it can harm the plant.</p>
+                                </div>
                             </div>
-
                         </div>
 
 
@@ -855,73 +1068,120 @@ const Store = () => {
 
                         <div
                             className="
-                                group
-                                cursor-pointer
-                                rounded-2xl
-                                overflow-hidden
-                                border
-                                border-[#405849]
-                                bg-[#173628]
-                                transition
-                                duration-300
-                                hover:-translate-y-1
-                                hover:border-[#68806f]
-                            "
+        group
+        relative
+        w-full
+        h-64
+        sm:h-72
+        md:h-80
+        lg:h-84
+
+        cursor-pointer
+        overflow-hidden
+        rounded-2xl
+        border
+        border-[#405849]
+        bg-[#173628]
+
+        transition-all
+        duration-300
+        hover:-translate-y-1
+        hover:border-[#68806f]
+    "
                         >
+                            {/* Background Image */}
+                            <img
+                                src="/images/guide3.png"
+                                alt="Healthy plants"
+                                className="
+            absolute
+            inset-0
+            h-full
+            w-full
+            object-cover
+            transition-all
+            duration-500
+            group-hover:scale-105
+            group-hover:blur-sm
+        "
+                            />
 
-                            <div className="h-48 overflow-hidden">
+                            {/* Dark overlay */}
+                            <div
+                                className="
+            absolute
+            inset-0
+            bg-black/10
+            transition-all
+            duration-500
+            group-hover:bg-black/30
+        "
+                            />
 
-                                <img
-                                    src="/images/guide3.jpg"
-                                    alt="Healthy plants"
-                                    className="
-                                        w-full
-                                        h-full
-                                        object-cover
-                                        transition-transform
-                                        duration-500
-                                        group-hover:scale-105
-                                    "
-                                />
+                            {/* Glass Text Panel */}
+                            <div
+                                className="
+                                absolute
+                                inset-x-0
+                                bottom-0
+                                z-10
+                                h-full
+                                p-5
 
-                            </div>
+                                bg-[#173628]/70
+                                backdrop-blur-xl
 
-                            <div className="p-5">
+                                border-t
+                                border-white/10
 
+                                transition-transform
+                                duration-500
+                                ease-in-out
+
+                                translate-y-[calc(100%-85px)]
+                                group-hover:translate-y-0
+                            "
+                            >
+                                {/* Category */}
                                 <p
                                     className="
-                                        text-xs
-                                        uppercase
-                                        tracking-wider
-                                        text-[#91aa98]
-                                    "
+                text-xs
+                uppercase
+                tracking-wider
+                text-[#91aa98]
+            "
                                 >
                                     Plant Nutrition
                                 </p>
 
+                                {/* Heading */}
                                 <h3
                                     className="
-                                        mt-2
-                                        text-xl
-                                        font-semibold
-                                    "
+                mt-2
+                text-xl
+                font-semibold
+                text-white
+            "
                                 >
                                     Signs Your Plant Needs Nutrients
                                 </h3>
 
-                                <p
+                                {/* Guide Points */}
+                                <div
                                     className="
-                                        mt-2
-                                        text-sm
-                                        text-[#aebdb2]
-                                    "
+                mt-3
+                space-y-2
+                text-sm
+                leading-relaxed
+                text-[#aebdb2]
+            "
                                 >
-                                    Spot common signs of nutrient
-                                    deficiency before they become serious.
-                                </p>
-
+                                    <p>1. Look for yellowing or pale leaves.</p>
+                                    <p>2. Check for slow or stunted plant growth.</p>
+                                    <p>3. Watch for weak stems or unusual leaf color.</p>
+                                    <p>4. Identify nutrient problems before they worsen.</p>
+                                </div>
                             </div>
-
                         </div>
 
                     </div>
@@ -935,34 +1195,31 @@ const Store = () => {
             {selectedProduct && (
                 <div
                     className="
-            fixed
-            inset-0
-            z-50
-            flex
-            items-center
-            justify-center
-            bg-black/60
-            backdrop-blur-sm
-            px-4
+            fixed inset-0 z-50
+            flex items-center justify-center
+            bg-black/70 backdrop-blur-md
+            p-3 sm:p-5
         "
                     onClick={() => {
                         setSelectedProduct(null);
                         setQuantity(1);
                     }}
                 >
-
                     {/* Popup */}
                     <div
                         className="
                 relative
-                w-full
-                max-w-2xl
+                flex w-full
+                max-w-4xl
+                max-h-[95vh]
                 overflow-hidden
                 rounded-2xl
-                border
-                border-[#405849]
-                bg-[#173628]
-                shadow-2xl
+                border border-white/10
+                bg-[#0d2b1e]
+                shadow-[0_25px_80px_rgba(0,0,0,0.5)]
+                
+                flex-col
+                md:flex-row
             "
                         onClick={(e) => e.stopPropagation()}
                     >
@@ -974,104 +1231,259 @@ const Store = () => {
                                 setQuantity(1);
                             }}
                             className="
-                    absolute
-                    right-4
-                    top-4
-                    z-10
-                    flex
-                    h-9
-                    w-9
-                    items-center
-                    justify-center
+                    absolute right-4 top-4 z-20
+                    flex h-9 w-9
+                    items-center justify-center
                     rounded-full
-                    bg-black/40
-                    text-xl
-                    text-white
-                    transition
-                    hover:bg-black/70
+                    bg-black/30
+                    text-lg text-white/80
+                    backdrop-blur-sm
+                    transition-all duration-200
+                    hover:bg-white/10
+                    hover:text-white
                 "
                         >
                             ×
                         </button>
 
 
-                        {/* Product Image */}
-                        <div className="h-70 w-full overflow-hidden mt-1">
+                        {/* ================= IMAGE ================= */}
+                        <div
+                            className="
+                    relative
+                    flex items-center justify-center
+                    bg-white
+                    shrink-0
+
+                    h-[280px]
+                    w-full
+
+                    sm:h-[340px]
+
+                    md:h-auto
+                    md:w-[42%]
+                    md:min-h-[520px]
+                "
+                        >
+                            {/* Soft background */}
+                            <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-[#f1f3ef]" />
+
                             <img
                                 src={selectedProduct.image}
                                 alt={selectedProduct.brandName}
-                                className="h-full w-full object-contain"
+                                className="
+                        relative z-10
+                        h-full w-full
+                        object-contain
+                        p-6 sm:p-8 md:p-10
+                        transition-transform duration-300
+                        hover:scale-[1.03]
+                    "
                             />
                         </div>
 
 
-                        {/* Product Details */}
-                        <div className="px-7 py-2">
+                        {/* ================= PRODUCT DETAILS ================= */}
+                        <div
+                            className="
+                    flex flex-1
+                    flex-col
+                    overflow-y-auto
+                    px-5 py-6
+                    sm:px-7 sm:py-7
+                    md:px-8 md:py-8
+                "
+                        >
 
-                            {/* Category */}
+                            {/* Premium + Quality */}
+                            <div className="flex items-center justify-between pr-10">
+
+                                <div>
+                                    <p
+                                        className="
+                                text-[13px]
+                                font-bold
+                                uppercase
+                                tracking-[0.18em]
+                                text-[#55d979]
+                            "
+                                    >
+                                        Premium Organic
+                                    </p>
+
+                                    <h2
+                                        className="
+                                mt-0.5
+                                text-3xl
+                                sm:text-3xl
+                                font-bold
+                                tracking-tight
+                                text-white
+                            "
+                                    >
+                                        {selectedProduct.brandName}
+                                    </h2>
+                                </div>
 
 
+                                {/* Quality Badge */}
+                                <div
+                                    className="
+                            hidden sm:flex
+                            items-center gap-1.5
+                            rounded-full
+                            bg-[#173d2a]
+                            px-3 py-1.5
+                            text-[#55d979]
+                            font-semibold
+                            uppercase
+                            tracking-wide
+                            text-[13px]
+                        "
+                                >
+                                    <span>✓</span>
+                                    Guaranteed Quality
+                                </div>
 
-                            {/* Product Name + Rating */}
-                            <div className="mt-2 flex items-center gap-4">
+                            </div>
 
-                                {/* Product Name */}
-                                <h2 className="text-3xl font-bold text-white">
-                                    {selectedProduct.brandName}
-                                </h2>
 
-                                {/* Rating */}
-                                <div className="flex items-center gap-2">
+                            {/* Rating */}
+                            <div className="mt-1.5 flex items-center gap-2">
 
-                                    <div className="text-lg text-yellow-400 pt-2">
-                                        ★★★★★
-                                    </div>
+                                <div className="text-sm tracking-wide text-lime-400">
+                                    ★★★★★
+                                </div>
 
-                                    <span className="text-sm text-[#c2cec5] pt-2">
-                                        4.5
-                                    </span>
+                                <span className="text-xs text-[#9caf9f]">
+                                    4.5 (1.2k reviews)
+                                </span>
+
+                            </div>
+
+
+                            {/* Divider */}
+                            <div className="my-5 h-px bg-white/10" />
+
+
+                            {/* Description */}
+                            <p
+                                className="
+                        max-w-lg
+                        text-sm
+                        sm:text-[15px]
+                        leading-6
+                        text-[#b9c8bd]
+                    "
+                            >
+                                {selectedProduct.description}
+                            </p>
+
+
+                            {/* ================= WEIGHT ================= */}
+                            <div className="mt-6">
+
+                                <p
+                                    className="
+                            mb-2
+                            text-[11px]
+                            font-bold
+                            uppercase
+                            tracking-wider
+                            text-[#d7e1da]
+                        "
+                                >
+                                    Select Weight
+                                </p>
+
+                                <div className="flex gap-2">
+
+                                    {/* 1 KG */}
+                                    <button
+                                        className="
+                                rounded-lg
+                                border border-[#39c96b]
+                                bg-[#123e28]
+                                px-4 py-2
+                                text-xs
+                                font-semibold
+                                text-[#5de181]
+                                shadow-[0_0_15px_rgba(57,201,107,0.08)]
+                            "
+                                    >
+                                        ✓ &nbsp;1 kg
+                                    </button>
+
+
+                                    {/* 5 KG */}
+                                    <button
+                                        className="
+                                rounded-lg
+                                bg-[#112f22]
+                                px-4 py-2
+                                text-xs
+                                font-medium
+                                text-[#73877b]
+                                transition
+                                hover:bg-[#183b29]
+                                hover:text-white
+                            "
+                                    >
+                                        5 kg
+                                    </button>
+
+
+                                    {/* 10 KG */}
+                                    <button
+                                        className="
+                                rounded-lg
+                                bg-[#112f22]
+                                px-4 py-2
+                                text-xs
+                                font-medium
+                                text-[#73877b]
+                                transition
+                                hover:bg-[#183b29]
+                                hover:text-white
+                            "
+                                    >
+                                        10 kg
+                                    </button>
 
                                 </div>
 
                             </div>
 
 
-                            {/* Manufacturer */}
-                            <p className="mt-2 text-sm text-[#aebdb2]">
-                                Manufactured by {selectedProduct.manufacturer}
-                            </p>
+                            {/* ================= PRICE ================= */}
+                            <div className="mt-6">
 
+                                <div className="flex items-end gap-3">
 
-                            {/* Description */}
-                            <p className="mt-2 leading-relaxed text-[#d1d9d2]">
-                                {selectedProduct.description}
-                            </p>
-
-
-                            {/* Price Section */}
-                            <div className="mt-3">
-
-                                {/* Weight */}
-                                <p className="text-sm font-medium text-[#aebdb2]">
-                                    1 kg
-                                </p>
-
-
-                                {/* MRP + Main Price */}
-                                <div className="mt-1 flex items-center gap-3">
-
-
-
-                                    <span className="text-2xl font-bold text-white">
-                                        ₹
-                                        {(selectedProduct.price * quantity).toFixed(2)}
+                                    <span
+                                        className="
+                                text-3xl
+                                sm:text-4xl
+                                font-bold
+                                tracking-tight
+                                text-white
+                            "
+                                    >
+                                        ₹{(selectedProduct.price * quantity).toFixed(2)}
                                     </span>
 
-                                    <span className="text-sm text-[#91aa98] pt-2">
+                                    <span className="mb-1 text-xs text-[#708479]">
                                         MRP
                                     </span>
 
-                                    <span className="text-sm text-[#91aa98] line-through ml-[-6px] pt-2">
+                                    <span
+                                        className="
+                                mb-1
+                                text-xs
+                                text-[#708479]
+                                line-through
+                            "
+                                    >
                                         ₹521
                                     </span>
 
@@ -1079,132 +1491,159 @@ const Store = () => {
 
 
                                 {/* Free Delivery */}
-                                <p className="mt-2 text-sm font-medium text-green-300">
-                                    ✓ Free Delivery
-                                </p>
+                                <div
+                                    className="
+                            mt-2
+                            inline-flex
+                            items-center gap-1.5
+                            rounded-full
+                            bg-[#123c28]
+                            px-2.5 py-1
+                            text-[11px]
+                            font-semibold
+                            text-[#55df7d]
+                        "
+                                >
+                                    <span>✓</span>
+                                    FREE DELIVERY
+                                </div>
 
                             </div>
 
 
-                            {/* Quantity + Buttons */}
-                            <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                            {/* ================= BOTTOM ACTIONS ================= */}
+                            <div
+                                className="
+                        mt-auto
+                        pt-7
+                        flex
+                        flex-col
+                        gap-3
 
-                                {/* Quantity Meter */}
-                                <div>
+                        sm:flex-row
+                        sm:items-center
+                    "
+                            >
 
+                                {/* Quantity */}
+                                <div
+                                    className="
+                            flex
+                            h-11
+                            w-fit
+                            items-center
+                            rounded-lg
+                            bg-[#092218]
+                            border border-white/5
+                        "
+                                >
 
-                                    <div
+                                    {/* Minus */}
+                                    <button
+                                        onClick={() =>
+                                            setQuantity((prev) =>
+                                                Math.max(1, prev - 1)
+                                            )
+                                        }
+                                        disabled={quantity === 1}
                                         className="
-                                flex
-                                items-center
-                                rounded-lg
-                                border
-                                border-[#506b5b]
-                                bg-[#10291e]
+                                flex h-full w-10
+                                items-center justify-center
+                                text-lg text-white
+                                transition
+                                hover:bg-white/5
+                                disabled:opacity-40
                             "
                                     >
-
-                                        {/* Minus */}
-                                        <button
-                                            onClick={() =>
-                                                setQuantity((prev) =>
-                                                    Math.max(1, prev - 1)
-                                                )
-                                            }
-                                            disabled={quantity === 1}
-                                            className="
-                                    flex
-                                    h-10
-                                    w-10
-                                    items-center
-                                    justify-center
-                                    text-xl
-                                    text-white
-                                    transition
-                                    hover:bg-[#294b39]
-                                    disabled:cursor-not-allowed
-                                    disabled:opacity-40
-                                "
-                                        >
-                                            −
-                                        </button>
+                                        −
+                                    </button>
 
 
-                                        {/* Quantity */}
-                                        <span className="flex h-10 w-10 items-center justify-center font-semibold text-white">
-                                            {quantity}
-                                        </span>
+                                    {/* Quantity */}
+                                    <span
+                                        className="
+                                flex h-full w-8
+                                items-center justify-center
+                                text-sm
+                                font-semibold
+                                text-white
+                            "
+                                    >
+                                        {quantity}
+                                    </span>
 
 
-                                        {/* Plus */}
-                                        <button
-                                            onClick={() =>
-                                                setQuantity((prev) =>
-                                                    Math.min(5, prev + 1)
-                                                )
-                                            }
-                                            disabled={quantity === 5}
-                                            className="
-                                    flex
-                                    h-10
-                                    w-10
-                                    items-center
-                                    justify-center
-                                    text-xl
-                                    text-white
-                                    transition
-                                    hover:bg-[#294b39]
-                                    disabled:cursor-not-allowed
-                                    disabled:opacity-40
-                                "
-                                        >
-                                            +
-                                        </button>
-
-                                    </div>
-
+                                    {/* Plus */}
+                                    <button
+                                        onClick={() =>
+                                            setQuantity((prev) =>
+                                                Math.min(5, prev + 1)
+                                            )
+                                        }
+                                        disabled={quantity === 5}
+                                        className="
+                                flex h-full w-10
+                                items-center justify-center
+                                text-lg text-white
+                                transition
+                                hover:bg-white/5
+                                disabled:opacity-40
+                            "
+                                    >
+                                        +
+                                    </button>
 
                                 </div>
 
 
                                 {/* Buttons */}
-                                <div className="flex gap-3">
+                                <div className="flex flex-1 gap-2">
 
-                                    {/* Add to Cart */}
+                                    {/* Add To Cart */}
                                     <button
                                         className="
+                                flex-1
+                                h-11
                                 rounded-lg
                                 border
-                                border-[#718674]
-                                bg-[#224b37]
-                                px-5
-                                py-3
-                                font-semibold
-                                text-white
-                                transition
-                                hover:bg-[#2d5c43]
-                                hover:scale-[1.03]
+                                border-[#39c96b]
+                                bg-transparent
+                                px-4
+                                text-sm
+                                font-bold
+                                text-[#59df7c]
+                                transition-all duration-200
+                                hover:bg-[#123e28]
+                                hover:shadow-[0_0_20px_rgba(57,201,107,0.12)]
                             "
                                     >
-                                        Add to Cart
+                                        🛒
+                                        <span className="ml-2">
+                                            Add to Cart
+                                        </span>
                                     </button>
 
 
-                                    {/* Buy */}
+                                    {/* Buy Now */}
                                     <button
                                         className="
+                                flex-1
+                                h-11
                                 rounded-lg
-                                bg-[#f1eee4]
-                                px-7
-                                py-3
-                                font-semibold
-                                text-[#183426]
-                                transition
-                                hover:scale-[1.03]
-                                hover:bg-white
+                                bg-gradient-to-r
+                                from-[#3cda78]
+                                to-[#8bdd22]
+                                px-4
+                                text-sm
+                                font-bold
+                                text-[#082215]
+                                shadow-[0_5px_20px_rgba(76,220,90,0.18)]
+                                transition-all duration-200
+                                hover:scale-[1.02]
+                                hover:shadow-[0_8px_25px_rgba(76,220,90,0.28)]
                             "
                                     >
-                                        Buy
+                                        Buy Now
                                     </button>
 
                                 </div>
@@ -1214,7 +1653,6 @@ const Store = () => {
                         </div>
 
                     </div>
-
                 </div>
             )}
         </div>
