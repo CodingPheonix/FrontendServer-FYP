@@ -1,12 +1,18 @@
-import './App.css';
-import VoiceAgent from './pages/VoiceAgent';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Store from './pages/Store'
+import VoiceAgent from './pages/VoiceAgent'
 
-function App() {
+const App = () => {
   return (
-    <div className="App" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', backgroundColor: '#f5f7fa' }}>
-      <VoiceAgent />
-    </div>
-  );
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/store" element={<Store />} />
+        <Route path='/agent' element={<VoiceAgent />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
