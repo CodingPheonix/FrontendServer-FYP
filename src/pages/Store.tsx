@@ -400,13 +400,14 @@ const Store = () => {
                                 inline-flex
                                 items-center
                                 gap-3
-                                rounded-lg
+                                rounded-3xl
                                 border
-                                border-[#879d8c]
+                                border-[#55d979]
                                 bg-[#173c2b]/80
                                 px-7
                                 py-3.5
                                 text-base
+                                text-[#55d979]
                                 font-semibold
                                 backdrop-blur-sm
                                 transition-all
@@ -879,35 +880,33 @@ const Store = () => {
                             {/* Glass Text Panel */}
                             <div
                                 className="
-            absolute
-            inset-x-0
-            bottom-0
-            z-10
-            h-full
-            p-5
+        absolute
+        inset-x-0
+        bottom-0
+        z-10
+        h-full
+        p-4
 
-            bg-[#173628]/70
-            backdrop-blur-xl
+        bg-[#001c12]/90
+        backdrop-blur-md
 
-            border-t
-            border-white/10
+        transition-transform
+        duration-500
+        ease-in-out
 
-            transition-transform
-            duration-500
-            ease-in-out
-
-            translate-y-[calc(100%-85px)]
-            group-hover:translate-y-0
-        "
+        translate-y-[calc(100%-90px)]
+        group-hover:translate-y-0
+    "
                             >
                                 {/* Category */}
                                 <p
                                     className="
-                text-xs
-                uppercase
-                tracking-wider
-                text-[#91aa98]
-            "
+            text-[10px]
+            font-medium
+            uppercase
+            tracking-wide
+            text-[#19a85b]
+        "
                                 >
                                     Fertilizer Guide
                                 </p>
@@ -915,29 +914,151 @@ const Store = () => {
                                 {/* Heading */}
                                 <h3
                                     className="
-                mt-2
-                text-xl
-                font-semibold
-                text-white
-            "
+            mt-1
+            text-[24px]
+            font-bold
+            leading-[1.05]
+            text-white
+        "
                                 >
-                                    How to Choose Right Fertilizer
+                                    How to Choose
+                                    <br />
+                                    Right Fertilizer
                                 </h3>
 
-                                {/* Description */}
-                                <div
-                                    className="
-                                        mt-3
-                                        space-y-2
-                                        text-sm
-                                        leading-relaxed
-                                        text-[#aebdb2]
-                                    "
-                                >
-                                    <p>1. Check the NPK ratio on the fertilizer label.</p>
-                                    <p>2. Choose the NPK ratio based on your plant's needs.</p>
-                                    <p>3. Use the recommended amount—avoid over-fertilizing.</p>
-                                    <p>4. Apply the fertilizer evenly around the plant.</p>
+                                {/* Steps */}
+                                <div className="mt-12 space-y-6">
+                                    {/* Step 1 */}
+                                    <div className="flex items-start gap-4">
+                                        <span
+                                            className="
+                    flex
+                    h-7
+                    w-7
+                    shrink-0
+                    items-center
+                    justify-center
+                    rounded-full
+                    border
+                    border-[#064d31]
+                    text-[11px]
+                    font-medium
+                    text-[#00c968]
+                "
+                                        >
+                                            1
+                                        </span>
+
+                                        <p
+                                            className="
+                    pt-1
+                    text-[11px]
+                    leading-relaxed
+                    text-white
+                "
+                                        >
+                                            Check the NPK ratio on the fertilizer label.
+                                        </p>
+                                    </div>
+
+                                    {/* Step 2 */}
+                                    <div className="flex items-start gap-4">
+                                        <span
+                                            className="
+                    flex
+                    h-7
+                    w-7
+                    shrink-0
+                    items-center
+                    justify-center
+                    rounded-full
+                    border
+                    border-[#064d31]
+                    text-[11px]
+                    font-medium
+                    text-[#00c968]
+                "
+                                        >
+                                            2
+                                        </span>
+
+                                        <p
+                                            className="
+                    pt-1
+                    text-[11px]
+                    leading-relaxed
+                    text-white
+                "
+                                        >
+                                            Choose the NPK ratio based on your plant's needs.
+                                        </p>
+                                    </div>
+
+                                    {/* Step 3 */}
+                                    <div className="flex items-start gap-4">
+                                        <span
+                                            className="
+                    flex
+                    h-7
+                    w-7
+                    shrink-0
+                    items-center
+                    justify-center
+                    rounded-full
+                    border
+                    border-[#064d31]
+                    text-[11px]
+                    font-medium
+                    text-[#00c968]
+                "
+                                        >
+                                            3
+                                        </span>
+
+                                        <p
+                                            className="
+                    pt-1
+                    text-[11px]
+                    leading-relaxed
+                    text-white
+                "
+                                        >
+                                            Use the recommended amount—avoid over-fertilizing.
+                                        </p>
+                                    </div>
+
+                                    {/* Step 4 */}
+                                    <div className="flex items-start gap-4">
+                                        <span
+                                            className="
+                    flex
+                    h-7
+                    w-7
+                    shrink-0
+                    items-center
+                    justify-center
+                    rounded-full
+                    border
+                    border-[#064d31]
+                    text-[11px]
+                    font-medium
+                    text-[#00c968]
+                "
+                                        >
+                                            4
+                                        </span>
+
+                                        <p
+                                            className="
+                    pt-1
+                    text-[11px]
+                    leading-relaxed
+                    text-white
+                "
+                                        >
+                                            Apply the fertilizer evenly around the plant.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1000,35 +1121,33 @@ const Store = () => {
                             {/* Glass Text Panel */}
                             <div
                                 className="
-            absolute
-            inset-x-0
-            bottom-0
-            z-10
-            h-full
-            p-5
+        absolute
+        inset-x-0
+        bottom-0
+        z-10
+        h-full
+        p-4
 
-            bg-[#173628]/70
-            backdrop-blur-xl
+        bg-[#001c12]/90
+        backdrop-blur-md
 
-            border-t
-            border-white/10
+        transition-transform
+        duration-500
+        ease-in-out
 
-            transition-transform
-            duration-500
-            ease-in-out
-
-            translate-y-[calc(100%-85px)]
-            group-hover:translate-y-0
-        "
+        translate-y-[calc(100%-90px)]
+        group-hover:translate-y-0
+    "
                             >
                                 {/* Category */}
                                 <p
                                     className="
-                text-xs
-                uppercase
-                tracking-wider
-                text-[#91aa98]
-            "
+            text-[10px]
+            font-medium
+            uppercase
+            tracking-wide
+            text-[#19a85b]
+        "
                                 >
                                     Plant Care
                                 </p>
@@ -1036,29 +1155,153 @@ const Store = () => {
                                 {/* Heading */}
                                 <h3
                                     className="
-                mt-2
-                text-xl
-                font-semibold
-                text-white
-            "
+            mt-1
+            text-[24px]
+            font-bold
+            leading-[1.05]
+            text-white
+        "
                                 >
-                                    How Often Should You Fertilize?
+                                    How Often Should
+                                    <br />
+                                    You Fertilize?
                                 </h3>
 
-                                {/* Guide Points */}
-                                <div
-                                    className="
-                mt-3
-                space-y-2
-                text-sm
-                leading-relaxed
-                text-[#aebdb2]
-            "
-                                >
-                                    <p>1. Check your plant's growth stage and condition.</p>
-                                    <p>2. Follow the recommended fertilizing schedule.</p>
-                                    <p>3. Reduce feeding during slow or dormant growth.</p>
-                                    <p>4. Avoid over-fertilizing, as it can harm the plant.</p>
+                                {/* Steps */}
+                                <div className="mt-12 space-y-6">
+
+                                    {/* Step 1 */}
+                                    <div className="flex items-start gap-4">
+                                        <span
+                                            className="
+                    flex
+                    h-7
+                    w-7
+                    shrink-0
+                    items-center
+                    justify-center
+                    rounded-full
+                    border
+                    border-[#064d31]
+                    text-[11px]
+                    font-medium
+                    text-[#00c968]
+                "
+                                        >
+                                            1
+                                        </span>
+
+                                        <p
+                                            className="
+                    pt-1
+                    text-[11px]
+                    leading-relaxed
+                    text-white
+                "
+                                        >
+                                            Check your plant's growth stage and condition.
+                                        </p>
+                                    </div>
+
+                                    {/* Step 2 */}
+                                    <div className="flex items-start gap-4">
+                                        <span
+                                            className="
+                    flex
+                    h-7
+                    w-7
+                    shrink-0
+                    items-center
+                    justify-center
+                    rounded-full
+                    border
+                    border-[#064d31]
+                    text-[11px]
+                    font-medium
+                    text-[#00c968]
+                "
+                                        >
+                                            2
+                                        </span>
+
+                                        <p
+                                            className="
+                    pt-1
+                    text-[11px]
+                    leading-relaxed
+                    text-white
+                "
+                                        >
+                                            Follow the recommended fertilizing schedule.
+                                        </p>
+                                    </div>
+
+                                    {/* Step 3 */}
+                                    <div className="flex items-start gap-4">
+                                        <span
+                                            className="
+                    flex
+                    h-7
+                    w-7
+                    shrink-0
+                    items-center
+                    justify-center
+                    rounded-full
+                    border
+                    border-[#064d31]
+                    text-[11px]
+                    font-medium
+                    text-[#00c968]
+                "
+                                        >
+                                            3
+                                        </span>
+
+                                        <p
+                                            className="
+                    pt-1
+                    text-[11px]
+                    leading-relaxed
+                    text-white
+                "
+                                        >
+                                            Reduce feeding during slow or dormant growth.
+                                        </p>
+                                    </div>
+
+                                    {/* Step 4 */}
+                                    <div className="flex items-start gap-4">
+                                        <span
+                                            className="
+                    flex
+                    h-7
+                    w-7
+                    shrink-0
+                    items-center
+                    justify-center
+                    rounded-full
+                    border
+                    border-[#064d31]
+                    text-[11px]
+                    font-medium
+                    text-[#00c968]
+                "
+                                        >
+                                            4
+                                        </span>
+
+                                        <p
+                                            className="
+                    pt-1
+                    text-[11px]
+                    leading-relaxed
+                    text-white
+                "
+                                        >
+                                            Avoid over-fertilizing, as it can harm the plant.
+                                        </p>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -1121,35 +1364,33 @@ const Store = () => {
                             {/* Glass Text Panel */}
                             <div
                                 className="
-                                absolute
-                                inset-x-0
-                                bottom-0
-                                z-10
-                                h-full
-                                p-5
+        absolute
+        inset-x-0
+        bottom-0
+        z-10
+        h-full
+        p-4
 
-                                bg-[#173628]/70
-                                backdrop-blur-xl
+        bg-[#001c12]/90
+        backdrop-blur-md
 
-                                border-t
-                                border-white/10
+        transition-transform
+        duration-500
+        ease-in-out
 
-                                transition-transform
-                                duration-500
-                                ease-in-out
-
-                                translate-y-[calc(100%-85px)]
-                                group-hover:translate-y-0
-                            "
+        translate-y-[calc(100%-90px)]
+        group-hover:translate-y-0
+    "
                             >
                                 {/* Category */}
                                 <p
                                     className="
-                text-xs
-                uppercase
-                tracking-wider
-                text-[#91aa98]
-            "
+            text-[10px]
+            font-medium
+            uppercase
+            tracking-wide
+            text-[#19a85b]
+        "
                                 >
                                     Plant Nutrition
                                 </p>
@@ -1157,29 +1398,153 @@ const Store = () => {
                                 {/* Heading */}
                                 <h3
                                     className="
-                mt-2
-                text-xl
-                font-semibold
-                text-white
-            "
+            mt-1
+            text-[24px]
+            font-bold
+            leading-[1.05]
+            text-white
+        "
                                 >
-                                    Signs Your Plant Needs Nutrients
+                                    Signs Your Plant
+                                    <br />
+                                    Needs Nutrients
                                 </h3>
 
-                                {/* Guide Points */}
-                                <div
-                                    className="
-                mt-3
-                space-y-2
-                text-sm
-                leading-relaxed
-                text-[#aebdb2]
-            "
-                                >
-                                    <p>1. Look for yellowing or pale leaves.</p>
-                                    <p>2. Check for slow or stunted plant growth.</p>
-                                    <p>3. Watch for weak stems or unusual leaf color.</p>
-                                    <p>4. Identify nutrient problems before they worsen.</p>
+                                {/* Steps */}
+                                <div className="mt-12 space-y-6">
+
+                                    {/* Step 1 */}
+                                    <div className="flex items-start gap-4">
+                                        <span
+                                            className="
+                    flex
+                    h-7
+                    w-7
+                    shrink-0
+                    items-center
+                    justify-center
+                    rounded-full
+                    border
+                    border-[#064d31]
+                    text-[11px]
+                    font-medium
+                    text-[#00c968]
+                "
+                                        >
+                                            1
+                                        </span>
+
+                                        <p
+                                            className="
+                    pt-1
+                    text-[11px]
+                    leading-relaxed
+                    text-white
+                "
+                                        >
+                                            Look for yellowing or pale leaves.
+                                        </p>
+                                    </div>
+
+                                    {/* Step 2 */}
+                                    <div className="flex items-start gap-4">
+                                        <span
+                                            className="
+                    flex
+                    h-7
+                    w-7
+                    shrink-0
+                    items-center
+                    justify-center
+                    rounded-full
+                    border
+                    border-[#064d31]
+                    text-[11px]
+                    font-medium
+                    text-[#00c968]
+                "
+                                        >
+                                            2
+                                        </span>
+
+                                        <p
+                                            className="
+                    pt-1
+                    text-[11px]
+                    leading-relaxed
+                    text-white
+                "
+                                        >
+                                            Check for slow or stunted plant growth.
+                                        </p>
+                                    </div>
+
+                                    {/* Step 3 */}
+                                    <div className="flex items-start gap-4">
+                                        <span
+                                            className="
+                    flex
+                    h-7
+                    w-7
+                    shrink-0
+                    items-center
+                    justify-center
+                    rounded-full
+                    border
+                    border-[#064d31]
+                    text-[11px]
+                    font-medium
+                    text-[#00c968]
+                "
+                                        >
+                                            3
+                                        </span>
+
+                                        <p
+                                            className="
+                    pt-1
+                    text-[11px]
+                    leading-relaxed
+                    text-white
+                "
+                                        >
+                                            Watch for weak stems or unusual leaf color.
+                                        </p>
+                                    </div>
+
+                                    {/* Step 4 */}
+                                    <div className="flex items-start gap-4">
+                                        <span
+                                            className="
+                    flex
+                    h-7
+                    w-7
+                    shrink-0
+                    items-center
+                    justify-center
+                    rounded-full
+                    border
+                    border-[#064d31]
+                    text-[11px]
+                    font-medium
+                    text-[#00c968]
+                "
+                                        >
+                                            4
+                                        </span>
+
+                                        <p
+                                            className="
+                    pt-1
+                    text-[11px]
+                    leading-relaxed
+                    text-white
+                "
+                                        >
+                                            Identify nutrient problems before they worsen.
+                                        </p>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
