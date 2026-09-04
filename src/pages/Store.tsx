@@ -602,12 +602,183 @@ const Store = () => {
 
 
 
-
                 {/* =================================================
-                    BEST SELLERS
+                    PREMIUM SECTION TRANSITION
                 ================================================== */}
 
-                <section className="pt-24">
+                <div
+                    className="
+                        relative
+                        flex
+                        items-center
+                        justify-center
+
+                        h-32
+                        md:h-36
+
+                        overflow-hidden
+                    "
+                >
+
+                    {/* Left decorative line */}
+                    <div
+                        className="
+                            absolute
+                            left-0
+                            right-1/2
+                            mr-12
+                            top-1/2
+                            h-px
+
+                            bg-gradient-to-r
+                            from-transparent
+                            via-[#496b58]
+                            to-[#496b58]
+
+                            opacity-60
+                        "
+                    />
+
+                    {/* Right decorative line */}
+                    <div
+                        className="
+                            absolute
+                            left-1/2
+                            right-0
+                            ml-12
+                            top-1/2
+                            h-px
+
+                            bg-gradient-to-l
+                            from-transparent
+                            via-[#496b58]
+                            to-[#496b58]
+
+                            opacity-60
+                        "
+                    />
+
+                    {/* Soft center glow */}
+                    <div
+                        className="
+                            absolute
+                            left-1/2
+                            top-1/2
+
+                            h-28
+                            w-72
+
+                            -translate-x-1/2
+                            -translate-y-1/2
+
+                            rounded-full
+
+                            bg-[#2d6848]/10
+                            blur-3xl
+
+                            pointer-events-none
+                        "
+                    />
+
+                    {/* Center element */}
+                    <div
+                        className="
+                            relative
+                            z-10
+
+                            flex
+                            flex-col
+                            items-center
+                            justify-center
+
+                            px-6
+                            bg-[#0b2d20]
+                        "
+                    >
+
+                        {/* Small decorative mark */}
+                        <div
+                            className="
+                                mb-2
+                                flex
+                                items-center
+                                gap-2
+                            "
+                        >
+                            <span
+                                className="
+                                    h-1
+                                    w-1
+                                    rounded-full
+                                    bg-[#55d979]
+                                "
+                            />
+
+                            <span
+                                className="
+                                    text-[9px]
+                                    font-medium
+                                    uppercase
+                                    tracking-[0.35em]
+                                    text-[#72907d]
+                                "
+                            >
+                                Rooted in Nature
+                            </span>
+
+                            <span
+                                className="
+                                    h-1
+                                    w-1
+                                    rounded-full
+                                    bg-[#55d979]
+                                "
+                            />
+                        </div>
+
+                        {/* Main decorative symbol */}
+                        <div
+                            className="
+                                flex
+                                items-center
+                                gap-3
+                            "
+                        >
+                            <span
+                                className="
+                                    h-px
+                                    w-8
+                                    bg-[#55d979]/50
+                                "
+                            />
+
+                            <span
+                                className="
+                                    text-sm
+                                    text-[#55d979]
+                                "
+                            >
+                                ✦
+                            </span>
+
+                            <span
+                                className="
+                                    h-px
+                                    w-8
+                                    bg-[#55d979]/50
+                                "
+                            />
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                {/* ==================== BEST SELLERS==================== */}
+
+                <section className="pt-1">
 
                     <div>
 
