@@ -226,7 +226,7 @@ const bestSellers = [
 
 const heroSlides = [
     {
-        image: "/images/fertilizer-hero3.png",
+        image: "/images/fertilizer-hero31.png",
         eyebrow: "Natural Plant Nutrition",
         title: "Grow Better.",
         title2: "Grow Naturally.",
@@ -234,7 +234,7 @@ const heroSlides = [
             "Discover premium fertilizers and plant nutrition products made to help your plants grow stronger, healthier and greener.",
     },
     {
-        image: "/images/fertilizer-hero2.png",
+        image: "/images/fertilizer-hero32.png",
         eyebrow: "Organic Plant Care",
         title: "Feed Your Plants.",
         title2: "Naturally.",
@@ -242,7 +242,7 @@ const heroSlides = [
             "Give your plants the nutrients they need with carefully selected organic fertilizers.",
     },
     {
-        image: "/images/fertilizer-hero1.png",
+        image: "/images/fertilizer-hero34.png",
         eyebrow: "Better Growth",
         title: "Healthier Plants.",
         title2: "Better Harvests.",

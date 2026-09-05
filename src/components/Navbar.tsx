@@ -5,7 +5,8 @@ const Navbar = () => {
     <nav className="fixed top-5 left-0 right-0 mx-auto
         w-[97%] md:w-[83%] px-6 py-3
         flex justify-between items-center
-       bg-white/10 backdrop-blur-xl border border-white/20
+        bg-white/10 backdrop-blur-xl 
+      
         rounded-full  shadow-xl z-50 ">
 
 

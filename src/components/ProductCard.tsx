@@ -51,6 +51,7 @@ const ProductCard = ({ product, onClick }: ProductCardProps) => {
                 <img
                     src={product.image}
                     alt={product.brandName}
+                    loading="lazy"
                     className="
                         h-full
                         w-full
