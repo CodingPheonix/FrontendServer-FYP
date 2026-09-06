@@ -80,7 +80,7 @@ const Navbar = () => {
         {/* Signup */}
         <NavLink
           to="/signup"
-          className="px-5 py-2 rounded-lg bg-green-600 text-white font-medium hover:bg-green-700 transition-colors duration-200"
+          className="px-5 py-2 rounded-3xl bg-[#42d369] text-white font-medium hover:bg-green-700 transition-colors duration-200"
         >
           Signup
         </NavLink>
