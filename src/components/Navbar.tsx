@@ -13,9 +13,13 @@ const Navbar = () => {
       {/* Logo / Website Name */}
       <NavLink
         to="/"
-        className="text-2xl font-bold text-green-600"
+        className="flex items-center "
       >
-        PhytoScan
+        <img
+          src="/imagelogo.png"
+          alt="PhytoScan"
+          className="h-12 w-auto  rounded-3xl"
+        />
       </NavLink>
 
       {/* Navigation Links */}
@@ -25,7 +29,7 @@ const Navbar = () => {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            `relative py-2 font-medium transition-colors duration-200 ${isActive
+            `relative py-2 text-lg font-medium transition-colors duration-200 ${isActive
               ? 'text-green-600 after:absolute after:left-0 after:right-0 after:-bottom-0.5 after:h-0.5 after:bg-green-600'
               : 'text-white hover:text-green-600'
             }`
@@ -38,7 +42,7 @@ const Navbar = () => {
         <NavLink
           to="/store"
           className={({ isActive }) =>
-            `relative py-2 font-medium transition-colors duration-200 ${isActive
+            `relative py-2 text-lg font-medium transition-colors duration-200 ${isActive
               ? 'text-green-600 after:absolute after:left-0 after:right-0 after:-bottom-0.5 after:h-0.5 after:bg-green-600'
               : 'text-white hover:text-green-600'
             }`
@@ -51,7 +55,7 @@ const Navbar = () => {
         <NavLink
           to="/agent"
           className={({ isActive }) =>
-            `relative py-2 font-medium transition-colors duration-200 ${isActive
+            `relative py-2 text-lg font-medium transition-colors duration-200 ${isActive
               ? 'text-green-600 after:absolute after:left-0 after:right-0 after:-bottom-0.5 after:h-0.5 after:bg-green-600'
               : 'text-white hover:text-green-600'
             }`

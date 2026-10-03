@@ -65,6 +65,7 @@ const ProductCard = ({ product, onClick }: ProductCardProps) => {
 
                         group-hover:scale-105
                         group-hover:blur-[2px]
+                        
                         group-hover:brightness-75
                     "
                 />
