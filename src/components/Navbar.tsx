@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import { useAuth } from '../context/AuthContext'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const { user, logout } = useAuth()
 
   return (
     <nav className="fixed top-5 left-0 right-0 mx-auto
@@ -70,7 +72,7 @@ const Navbar = () => {
 
         {/* PlantScan */}
         <NavLink
-          to="/agent"
+          to="/plantscan"
           className={({ isActive }) =>
             `relative py-2 text-lg font-medium transition-colors duration-200 ${isActive
               ? 'text-green-600 after:absolute after:left-0 after:right-0 after:-bottom-0.5 after:h-0.5 after:bg-green-600'
@@ -84,25 +86,41 @@ const Navbar = () => {
 
       {/* Desktop Right Side */}
       <div className="hidden md:flex items-center gap-6">
-        <NavLink
-          to="/login"
-          className={({ isActive }) =>
-            `font-medium transition-colors duration-200 ${isActive
-              ? 'text-green-600'
-              : 'text-white hover:text-green-600'
-            }`
-          }
-        >
-          Login
-        </NavLink>
+        {user ? (
+          <div className="flex items-center gap-4">
+            <span className="text-xs text-[#a3b899] font-medium">
+              Hello, <span className="text-white font-semibold">{user.name}</span>
+            </span>
+            <button
+              onClick={() => logout()}
+              className="px-4 py-1.5 rounded-3xl bg-white/10 hover:bg-white/20 text-white text-sm font-medium transition-colors cursor-pointer"
+            >
+              Logout
+            </button>
+          </div>
+        ) : (
+          <>
+            <NavLink
+              to="/login"
+              className={({ isActive }) =>
+                `font-medium transition-colors duration-200 ${isActive
+                  ? 'text-green-600'
+                  : 'text-white hover:text-green-600'
+                }`
+              }
+            >
+              Login
+            </NavLink>
 
-        {/* Signup */}
-        <NavLink
-          to="/signup"
-          className="px-5 py-2 rounded-3xl bg-[#42d369] text-white font-medium hover:bg-green-700 transition-colors duration-200"
-        >
-          Signup
-        </NavLink>
+            {/* Signup */}
+            <NavLink
+              to="/signup"
+              className="px-5 py-2 rounded-3xl bg-[#42d369] text-white font-medium hover:bg-green-700 transition-colors duration-200"
+            >
+              Signup
+            </NavLink>
+          </>
+        )}
       </div>
 
       {/* Mobile Navigation Menu */}
@@ -127,7 +145,7 @@ const Navbar = () => {
             Store
           </NavLink>
           <NavLink
-            to="/agent"
+            to="/plantscan"
             onClick={() => setIsOpen(false)}
             className={({ isActive }) =>
               `font-medium transition-colors duration-200 ${isActive ? 'text-green-600' : 'text-white hover:text-green-600'}`
@@ -136,22 +154,36 @@ const Navbar = () => {
             PlantScan
           </NavLink>
           <div className="h-[1px] w-3/4 bg-white/20 my-2"></div>
-          <NavLink
-            to="/login"
-            onClick={() => setIsOpen(false)}
-            className={({ isActive }) =>
-              `font-medium transition-colors duration-200 ${isActive ? 'text-green-600' : 'text-white hover:text-green-600'}`
-            }
-          >
-            Login
-          </NavLink>
-          <NavLink
-            to="/signup"
-            onClick={() => setIsOpen(false)}
-            className="px-6 py-2 rounded-3xl bg-[#42d369] text-white font-medium hover:bg-green-700 transition-colors duration-200"
-          >
-            Signup
-          </NavLink>
+          {user ? (
+            <button
+              onClick={() => {
+                logout();
+                setIsOpen(false);
+              }}
+              className="px-6 py-2 rounded-3xl bg-white/10 text-white font-medium hover:bg-white/20 transition-colors duration-200"
+            >
+              Logout ({user.name})
+            </button>
+          ) : (
+            <>
+              <NavLink
+                to="/login"
+                onClick={() => setIsOpen(false)}
+                className={({ isActive }) =>
+                  `font-medium transition-colors duration-200 ${isActive ? 'text-green-600' : 'text-white hover:text-green-600'}`
+                }
+              >
+                Login
+              </NavLink>
+              <NavLink
+                to="/signup"
+                onClick={() => setIsOpen(false)}
+                className="px-6 py-2 rounded-3xl bg-[#42d369] text-white font-medium hover:bg-green-700 transition-colors duration-200"
+              >
+                Signup
+              </NavLink>
+            </>
+          )}
         </div>
       )}
     </nav>
